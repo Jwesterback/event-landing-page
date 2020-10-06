@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+/* General */ 
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font: normal 16px sans-serif;
+	color: #252629;
+}
+
+hr {
+	width: 160px;
+	height: 2px;
+	background-color: #316392;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 90px 100px;
+}
+
+
+@media (max-width: 1000px){
+
+	section {
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	section {
+		padding: 80px 30px;
+	}
+
+}
+
+.title {
+	color: #252629;
+	text-transform: capitalize; 
+	font: bold 32px 'Roboto', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+p {
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+a {
+  color: #fff;
+}
+
+/* Navbar */
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  background: #002e52;
+}
+
+.navigation a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 2em;
+  color: white;
+}
+
+.navigation a:hover {
+  color: #adadad;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+
+
+/* Hero */ 
+
+.logo {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 80px;
+  color: #316392;
+}   
+
+.logo:before {
+ color: #fff;
+ content: "FEC";
+}
+
+.hero {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: #002e52;
+}
+
+/* CTA with animation, tutorial https://www.youtube.com/watch?v=w0V4HAYYCbU */
+
+.btn {
+padding: 20px 50px;
+margin: 20px 5px 10px 5px;
+background-color: transparent;
+transform: translate(0%);
+color:#fff;
+letter-spacing:2px;
+text-transform:uppercase;
+text-decoration:none;
+cursor:pointer;
+box-shadow:0 20px 50px rgba(0,0,0,.5);
+overflow:hidden;
+border: 0px;
+}
+
+.btn:before
+{
+content: '';
+position: absolute;
+top: 2px;
+left: 2px;
+bottom: 2px;
+width: 50%;
+}
+
+.btn span:nth-child(1)
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 2px;
+background: linear-gradient(to right,#002e52,#1779ff);
+animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1
+{
+ 0%
+ {
+   transform:translateX(-100%);
+
+ }
+ 100%
+ {
+   transform:translateX(100%);
+
+ }
+}
+.btn span:nth-child(2)
+{
+position: absolute;
+top: 0;
+right: 0;
+width: 2px;
+height: 100%;
+background: linear-gradient(to bottom,#002e52,#1779ff);
+animation: animate2 2s linear infinite;
+animation-delay: 1s;
+}
+@keyframes animate2
+{
+ 0%
+ {
+   transform:translateY(-100%);
+
+ }
+ 100%
+ {
+   transform:translateY(100%);
+
+ }
+}
+.btn span:nth-child(3)
+{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 2px;
+background: linear-gradient(to left,#002e52,#1779ff);
+animation: animate3 2s linear infinite;
+}
+@keyframes animate3
+{
+ 0%
+ {
+   transform:translateX(100%);
+
+ }
+ 100%
+ {
+   transform:translateX(-100%);
+
+ }
+}
+.btn span:nth-child(4)
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background: linear-gradient(to top,#002e52,#1779ff);
+animation: animate4 2s linear infinite;
+animation-delay: 1s;
+}
+@keyframes animate4
+{
+ 0%
+ {
+   transform:translateY(100%);
+
+ }
+ 100%
+ {
+   transform:translateY(-100%);
+
+ }
+}
+
+ol{
+  list-style: none;
+  margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+ol li::before{
+  content: "✅";
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+
+
+/* Speakers */ 
+
+.speakers {
+  background: #f7f7f7;
+}
+
+.speaker{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.speaker-item:not(:last-of-type) {
+	margin-bottom: 40px;
+}
+
+.speaker-img {
+	max-width: 100%;
+}
+
+.speaker-header {
+	margin: 0;
+  padding: 4px;
+  font-size: 24px;
+  text-align: left;
+}
+
+.speaker-caption {
+	margin: 0;
+  padding: 4px;
+  font-size: 16px;
+  text-align: left;
+}
+
+@media screen and (min-width: 769px){
+
+	.speaker-wrapper{
+    max-width: 1240px;
+    		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+	}
+
+	/* .speaker{
+
+	} */
+
+	.speaker-item{
+		padding: 20px;
+	}
+
+	.speaker-img{
+		min-width: 300px; /*350*/
+		max-width: 300px;
+	}
+
+}
+
+
+/* Tickets */
+
+.row {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.card {
+  width: 300px;                 /* Set width of cards */
+  display: flex;                /* Children use Flexbox */
+  flex-direction: column;       /* Rotate Axis */
+  margin: 15px;                  /* Add space between cards */
+  background: #e6e6e6;
+}
+
+.ticket-active {
+  width: 300px;                 /* Set width of cards */
+  display: flex;                /* Children use Flexbox */
+  flex-direction: column;       /* Rotate Axis */
+  margin: 15px;                  /* Add space between cards */
+  background: #002e52;
+  color: #fff;
+}
+
+
+.card-header {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #002e52;
+  padding: 25px 10px;
+}
+
+
+.card-main {
+  display: flex;              /* Children use Flexbox */
+  flex-direction: column;     /* Rotate Axis to Vertical */
+  justify-content: center;    /* Group Children in Center */
+  align-items: center;        /* Group Children in Center (on cross axis) */
+  padding: 35px 0;            /* Add padding to the top/bottom */
+}
+
+
+.main-description {
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+}
+
+.price {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.countdown {
+  margin: 0;
+  padding: 0;
+}
+
+.ticket-description {
+  color: #000000;
+  text-align: center;
+
+}
+
+.ticket-btn {
+  background-color: #08A9F4;
+  border: 0;
+  padding: 15px 50px;
+  margin: 20px 5px 10px 5px;
+  cursor:pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.reminder-btn {
+  background-color: transparent;  
+  border: 2px solid #08A9F4;
+  padding: 15px 50px;
+  margin: 20px 5px 10px 5px;
+  cursor:pointer;
+  color: #08A9F4;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/* Sponsors */ 
+
+.sponsors {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.img {
+  width: 165px;
+}
+
+.container-sponsors {
+  transform: scale(0.975);
+  padding: 20px 60px;
+  margin: 0 0 20px 0;
+  background-clip: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Contact section */ 
+
+.contact {
+  background: #f7f7f7;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px 32px;
+  margin: 0px auto;
+}
+
+.contact-input {
+  background-color: transparent;
+  border:2px solid #d1d1d1;
+  transition: all 0.3s;
+  padding: 10px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  color:black;
+}
+
+.contact-input:focus {
+  border: 3px solid #d1d1d1; 
+}
+
+textarea{
+  resize:vertical;
+}
+
+.contact-btn{
+  max-width:450px;
+  width: 100%;
+  background: transparent;
+  cursor:pointer;
+  border: 2px solid #d1d1d1;
+  color: #000;
+  font-size: 16px;
+  padding: 15px;
+  margin: 5px 5px 5px 0px;
+  text-align:center;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.contact-btn:hover{
+ background: #adadad;
+}
+
+/* --- Footer section --- */
+
+footer {
+    background: #316392;
+}

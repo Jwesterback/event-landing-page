@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FEC20 - World's Biggest Front End Event</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <ul class="navigation">
+                <li><a href="#about">About</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+
+        <h1 class="logo">20</h1>
+        <h1>The World’s Biggest (and most epic) <br>Front End conference</h1>
+
+        <p>March 18th 2021</p>
+        <a href="#tickets"><button class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Get your tickets
+            </button></a>
+
+        <p class="reminder">or <a href="/reminder.html"> set reminder</a></p>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about">
+
+        <h3 class="title">This is FEC20</h3>
+        <p>As the World's biggest conference for front end development, we unite like-minded from around the world.
+            Share topics
+            that move the developer world and learn from world-class talks. All digital - It will be fun!
+
+            If you are looking for a day packed with inspiration, networking and insights - look no further. Check this
+            out:
+            <!-- Emoji checklist -->
+        <ol>
+            <li>Learn from the leading forces</li>
+            <li>Interactive and fun</li>
+            <li>98% satisfaction rate last year</li>
+            <li>Participate digitally from the comfort of your home</li>
+        </ol>
+        </p>
+
+    </section>
+
+    <!--SPEAKER SECTION -->
+
+    <section class="speakers">
+
+        <h3 class="title">World's BEST Speakers, brought to YOU!</h3>
+
+        <ul class="speaker speaker-wrapper">
+
+            <li class="speaker-item">
+                <img src="/images/kristian-kjeldsen.jpg" alt="Speaker Kristian Kjeldsen" class="speaker-img">
+                <h3 class="speaker-header">Kristian Kjeldsen</h3>
+                <p class="speaker-caption">
+                    Keynote Speaker
+                </p>
+            </li>
+
+            <li class="speaker-item">
+                <img src="/images/bill-gates.png" alt="Speaker Bill Gates" class="speaker-img">
+                <h3 class="speaker-header">Bill Gates</h3>
+                <p class="speaker-caption">
+                    Co-founder @ Microsoft
+                </p>
+            </li>
+
+            <li class="speaker-item">
+                <img src="/images/amy-webb.jpg" alt="Speaker Amy Webb" class="speaker-img">
+                <h3 class="speaker-header">Amy Webb</h3>
+                <p class="speaker-caption">
+                    Founder @ Future Today Institute
+                </p>
+            </li>
+
+            <li class="speaker-item">
+                <img src="/images/paul-irish.png" alt="Speaker Paul Irish" class="speaker-img">
+                <h3 class="speaker-header">Paul Irish</h3>
+                <p class="speaker-caption">
+                    Performance Engineer @ Google Chrome
+                </p>
+            </li>
+
+            <li class="speaker-item">
+                <img src="/images/emily-plummer.png" alt="Speaker Emily Plummer" class="speaker-img">
+                <h3 class="speaker-header">Emily Plummer</h3>
+                <p class="speaker-caption">
+                    Design Systems Engineer @ GitHub
+                </p>
+            </li>
+
+            <li class="speaker-item">
+                <img src="/images/igor-minar.png" alt="Speaker Igor Minar" class="speaker-img">
+                <h3 class="speaker-header">Igor Minar</h3>
+                <p class="speaker-caption">
+                    Software Engineer @ Google
+                </p>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- TICKET SECTION -->
+
+    <section>
+
+        <h3 class="title">Tickets</h3>
+
+        <p>Make sure you secure your spot for next year’s digital FEC. The
+            quicker you act, the cheaper it is.</p>
+
+        <div class="row">
+            <!-- Super Early Bird -->
+            <div class="ticket-active">
+                <div class="card-header">Super Early Bird</div>
+                <div class="card-main">
+
+                    <div class="price">995 SEK</div>
+                    <p class="countdown">The price increases in</p>
+                    <!-- Countdown -->
+                    <p id="countdowntimer"></p>
+                    <!-- CTA -->
+                    <button class="ticket-btn">Get tickets</button>
+
+                </div>
+            </div>
+            <!-- Early Bird -->
+            <div class="card">
+                <div class="card-header">Early Bird</div>
+                <div class="card-main">
+
+                    <div class="main-description">1 490 SEK</div>
+                    <p>Until January 20</p>
+                    <button class="reminder-btn">Set reminder</button>
+                </div>
+            </div>
+            <!-- Standard -->
+            <div class="card">
+                <div class="card-header">Standard</div>
+                <div class="card-main">
+
+                    <div class="main-description">1 990 SEK</div>
+                    <p>Until March 18</p>
+                    <button class="reminder-btn">Set reminder</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--- SPONSOR SECTION --->
+
+    <section>
+
+        <h3 class="title">Thanks to our sponsors</h3>
+
+        <div class="sponsors">
+            <div class="container-sponsors">
+                <img src="images/KYH-logo.png" alt="KYH" class="img" />
+            </div>
+            <div class="container-sponsors">
+                <img src="images/google-logo.png" alt="Google" class="img" />
+            </div>
+            <div class="container-sponsors">
+                <img src="images/microsoft-logo.png" alt="Microsoft" class="img" />
+            </div>
+            <div class="container-sponsors">
+                <img src="images/samsung-logo.png" alt="Samsung" class="img" />
+            </div>
+        </div>
+
+    </section>
+
+    <!--- CONTACT --->
+
+    <section class="contact">
+
+        <form class="contact-form">
+            <h3 class="title">Have a question?</h2>
+                <br>
+                <label for="firstname">First Name:</label><br>
+                <input class="contact-input" type="text" id="firstname" name="firstname"
+                    placeholder="Your first name...">
+                <br>
+                <label for="lastname">Last Name:</label><br>
+                <input class="contact-input" type="text" id="lastname" name="lastname" placeholder="Your last name...">
+                <br>
+                <label for="email">Email: </label><br>
+                <input class="contact-input" type="email" id="email" name="email" placeholder="Your email address...">
+                <br>
+                <label for="message">Message:</label><br>
+                <textarea class="contact-input" name="message" id="message">
+
+            </textarea>
+                <br>
+                <button class="contact-btn" type="button" value="Send">Send</button>
+                <br>
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>This is the footer</p>
+    </footer>
