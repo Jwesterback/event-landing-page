@@ -12,7 +12,7 @@
 }
 
 html {
-	font: normal 16px sans-serif;
+  font: normal 18px 'Roboto', sans-serif;
 	color: #252629;
 }
 
@@ -50,8 +50,8 @@ section {
 
 .title {
 	color: #252629;
-	text-transform: capitalize; 
-	font: bold 32px 'Roboto', sans-serif;
+	text-transform: uppercase; 
+	font: bold 34px 'Roboto', sans-serif;
 	margin-bottom: 35px;
 	text-align: center;
 }
@@ -61,7 +61,7 @@ p {
 	text-align: center;
 	margin-bottom: 35px;
 	padding: 0 20px;
-	line-height: 2;
+	line-height: 1.6;
 }
 a {
   color: #fff;
@@ -512,8 +512,87 @@ textarea{
  background: #adadad;
 }
 
-/* --- Footer section --- */
 
+/*Footer*/
 footer {
-    background: #316392;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #316392;
+	padding: 60px 0;
 }
+
+footer p {
+  font-size: 16px;
+  color: #e6e1de;
+	margin-bottom: 10px;
+}
+
+
+/* --- Get reminder form --- */
+
+.form {
+  font: 1em sans-serif;
+  width: 400px;
+  padding: 0;
+  margin: 150px auto;
+  color: rgb(80, 80, 80);
+}
+
+input[type=email]{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: 2px solid #e6e1de;
+  padding: 5px;
+  margin: 0;
+  font-family: inherit;
+  font-size: 90%;
+  box-sizing: border-box;
+}
+
+.btn-form {
+  background-color: Transparent;
+  border: 2px solid rgb(80, 80, 80);
+  padding: 10px 30px;
+  margin: 10px 5px 10px 5px;
+  cursor:pointer;
+  color: rgb(80, 80, 80);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-form:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+
+/* This is our style for the invalid fields */
+input:invalid{
+  color: #626167;
+  border: 1px solid red;
+ /* background-color: #FDD;*/
+}
+
+input:focus:invalid {
+  outline: none;
+}
+/* This is the style of our error messages */
+.error {
+  width  : 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #555555;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.5em;
+}
+
+

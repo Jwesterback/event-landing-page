@@ -2,15 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="description" content="Share topics that move the developer world and learn from world-class talks. 
+    Bill Gates, Kristian Kjeldsen and Amy Webb will be there. Will you?">
+    <meta name="keywords" content="front end developer, front end, web development, javascript, conference, event">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>FEC20 - World's Biggest Front End Event</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
 </head>
 
 <body>
     <header>
-        <!-- Navigation -->
+        <!--- Navigation --->
         <nav>
             <ul class="navigation">
                 <li><a href="#about">About</a></li>
@@ -21,6 +27,7 @@
         </nav>
     </header>
 
+    <!--- TOP SECTION --->
 
     <section class="hero">
 
@@ -40,16 +47,17 @@
 
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!--- ABOUT SECTION --->
 
-    <section class="about">
+    <section class="about" id="about">
 
-        <h3 class="title">This is FEC20</h3>
+        <h2 class="title">This is FEC20</h2>
         <p>As the World's biggest conference for front end development, we unite like-minded from around the world.
             Share topics
             that move the developer world and learn from world-class talks. All digital - It will be fun!
 
-            If you are looking for a day packed with inspiration, networking and insights - look no further. Check this
+            If you are looking for a day packed with inspiration, networking and insights - look no further. Check
+            this
             out:
             <!-- Emoji checklist -->
         <ol>
@@ -62,11 +70,11 @@
 
     </section>
 
-    <!--SPEAKER SECTION -->
+    <!---SPEAKER SECTION --->
 
-    <section class="speakers">
+    <section class="speakers" id="speakers">
 
-        <h3 class="title">World's BEST Speakers, brought to YOU!</h3>
+        <h2 class="title">Speakers</h2>
 
         <ul class="speaker speaker-wrapper">
 
@@ -121,14 +129,11 @@
         </ul>
     </section>
 
-    <!-- TICKET SECTION -->
+    <!--- TICKET SECTION --->
 
-    <section>
+    <section id="tickets">
 
-        <h3 class="title">Tickets</h3>
-
-        <p>Make sure you secure your spot for next year’s digital FEC. The
-            quicker you act, the cheaper it is.</p>
+        <h2 class="title">Tickets</h2>
 
         <div class="row">
             <!-- Super Early Bird -->
@@ -141,18 +146,17 @@
                     <!-- Countdown -->
                     <p id="countdowntimer"></p>
                     <!-- CTA -->
-                    <button class="ticket-btn">Get tickets</button>
-
+                    <input type="button" value="Get tickets" class="ticket-btn" onclick="window.location.href='/'" />
                 </div>
             </div>
             <!-- Early Bird -->
             <div class="card">
                 <div class="card-header">Early Bird</div>
                 <div class="card-main">
-
                     <div class="main-description">1 490 SEK</div>
                     <p>Until January 20</p>
-                    <button class="reminder-btn">Set reminder</button>
+                    <input type="button" value="Set reminder" class="reminder-btn"
+                        onclick="window.location.href='/reminder.html'" />
                 </div>
             </div>
             <!-- Standard -->
@@ -162,18 +166,44 @@
 
                     <div class="main-description">1 990 SEK</div>
                     <p>Until March 18</p>
-                    <button class="reminder-btn">Set reminder</button>
+                    <input type="button" value="Set reminder" class="reminder-btn"
+                        onclick="window.location.href='/reminder.html'" />
                 </div>
             </div>
         </div>
     </section>
 
 
+    <!--- CONTACT SECTION --->
+
+    <section class="contact" id="contact">
+
+        <form class="contact-form">
+            <h2 class="title">Have a question?</h2>
+            <br>
+            <label for="firstname">First Name:</label><br>
+            <input class="contact-input" type="text" id="firstname" name="firstname" placeholder="Your first name...">
+            <br>
+            <label for="lastname">Last Name:</label><br>
+            <input class="contact-input" type="text" id="lastname" name="lastname" placeholder="Your last name...">
+            <br>
+            <label for="email">Email: </label><br>
+            <input class="contact-input" type="email" id="email" name="email" placeholder="Your email address...">
+            <br>
+            <label for="message">Message:</label><br>
+            <textarea class="contact-input" name="message" id="message"> </textarea>
+            <br>
+            <button class="contact-btn" type="button" value="Send">Send</button>
+            <br>
+        </form>
+
+    </section>
+
     <!--- SPONSOR SECTION --->
 
     <section>
 
-        <h3 class="title">Thanks to our sponsors</h3>
+        <h2 class="title">Thanks to our sponsors</h2>
 
         <div class="sponsors">
             <div class="container-sponsors">
@@ -192,36 +222,8 @@
 
     </section>
 
-    <!--- CONTACT --->
-
-    <section class="contact">
-
-        <form class="contact-form">
-            <h3 class="title">Have a question?</h2>
-                <br>
-                <label for="firstname">First Name:</label><br>
-                <input class="contact-input" type="text" id="firstname" name="firstname"
-                    placeholder="Your first name...">
-                <br>
-                <label for="lastname">Last Name:</label><br>
-                <input class="contact-input" type="text" id="lastname" name="lastname" placeholder="Your last name...">
-                <br>
-                <label for="email">Email: </label><br>
-                <input class="contact-input" type="email" id="email" name="email" placeholder="Your email address...">
-                <br>
-                <label for="message">Message:</label><br>
-                <textarea class="contact-input" name="message" id="message">
-
-            </textarea>
-                <br>
-                <button class="contact-btn" type="button" value="Send">Send</button>
-                <br>
-        </form>
-
-    </section>
-
-    <!-- Footer -->
+    <!-- FOOTER -->
 
     <footer>
-        <p>This is the footer</p>
+        <p>Made by <a href="https://github.com/Jwesterback">jwesterback</a></p>
     </footer>
