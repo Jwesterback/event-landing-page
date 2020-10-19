@@ -13,7 +13,8 @@
 
 html {
   font: normal 18px 'Roboto', sans-serif;
-	color: #252629;
+  color: #252629;
+  scroll-behavior: smooth;
 }
 
 hr {
@@ -476,7 +477,7 @@ ol li::before{
 
 .contact-input {
   background-color: transparent;
-  border:2px solid #d1d1d1;
+  border:2px solid #002e52;
   transition: all 0.3s;
   padding: 10px;
   margin-bottom: 15px;
@@ -486,7 +487,7 @@ ol li::before{
 }
 
 .contact-input:focus {
-  border: 3px solid #d1d1d1; 
+  border: 5px solid #002e52; 
 }
 
 textarea{
@@ -498,7 +499,7 @@ textarea{
   width: 100%;
   background: transparent;
   cursor:pointer;
-  border: 2px solid #d1d1d1;
+  border: 2px solid #002e52;
   color: #000;
   font-size: 16px;
   padding: 15px;
@@ -509,31 +510,13 @@ textarea{
 }
 
 .contact-btn:hover{
- background: #adadad;
+ background: #08A9F4;
 }
 
 
-/*Footer*/
-footer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	background-color: #316392;
-	padding: 60px 0;
-}
-
-footer p {
-  font-size: 16px;
-  color: #e6e1de;
-	margin-bottom: 10px;
-}
-
-
-/* --- Get reminder form --- */
+/*  Get reminder form / email validation */
 
 .form {
-  font: 1em sans-serif;
   width: 400px;
   padding: 0;
   margin: 150px auto;
@@ -544,7 +527,7 @@ input[type=email]{
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  border: 2px solid #e6e1de;
+  border: 2px solid #002e52;
   padding: 5px;
   margin: 0;
   font-family: inherit;
@@ -572,7 +555,8 @@ input[type=email]{
 /* This is our style for the invalid fields */
 input:invalid{
   color: #626167;
-  border: 1px solid red;
+  background-color: Transparent;
+  /* border: 1px solid rgb(58, 58, 58); */
  /* background-color: #FDD;*/
 }
 
@@ -584,7 +568,7 @@ input:focus:invalid {
   width  : 100%;
   padding: 0;
 
-  font-size: 80%;
+  font-size: 70%;
   color: white;
   background-color: #555555;
   border-radius: 0 0 5px 5px;
@@ -593,6 +577,46 @@ input:focus:invalid {
 
 .error.active {
   padding: 0.5em;
+}
+
+
+/*--- Go back to top button ---*/
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #eb4034;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#topBtn:hover {
+  background-color: #555;
+}
+
+
+/*---Footer---*/
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #316392;
+	padding: 60px 0;
+}
+
+footer p {
+  font-size: 16px;
+  color: #e6e1de;
+	margin-bottom: 10px;
 }
 
 

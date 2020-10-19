@@ -1,5 +1,5 @@
-// COUNT DOWN TIMER -->
-// https://www.w3schools.com/howto/howto_js_countdown.asp
+// COUNT DOWN TIMER 
+// Tutorial ttps://www.w3schools.com/howto/howto_js_countdown.asp
 
 // Set the date we're counting down to
 var countDownDate = new Date("Nov 30, 20 23:59:59").getTime();
@@ -30,10 +30,33 @@ var x = setInterval(function () {
     }
 }, 1000);
 
-// <--- END COUNT DOWN TIMER
 
 
-// E-MAIL VALIDATION -->
+// GO BACK TO TOP BUTTON 
+// Tutorial https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
+
+//Get the button
+var mybutton = document.getElementById("topBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+// E-MAIL VALIDATION
 
 const form = document.getElementsByTagName('form')[0];
 

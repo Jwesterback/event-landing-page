@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Share topics that move the developer world and learn from world-class talks. 
-    Bill Gates, Kristian Kjeldsen and Amy Webb will be there. Will you?">
+    Bill Gates, Kristian Kjeldsen and Amy Webb will be there. You should join too!">
     <meta name="keywords" content="front end developer, front end, web development, javascript, conference, event">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <!--- Navigation --->
+        <!-- Navigation -->
         <nav>
             <ul class="navigation">
                 <li><a href="#about">About</a></li>
@@ -27,27 +27,29 @@
         </nav>
     </header>
 
-    <!--- TOP SECTION --->
-
+    <!-- TOP SECTION -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
     <section class="hero">
 
         <h1 class="logo">20</h1>
         <h1>The World’s Biggest (and most epic) <br>Front End conference</h1>
 
         <p>March 18th 2021</p>
-        <a href="#tickets"><button class="btn">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Get your tickets
-            </button></a>
+
+        <button class="btn" onclick="window.location.href='#tickets'">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Get your tickets
+
+        </button>
 
         <p class="reminder">or <a href="/reminder.html"> set reminder</a></p>
 
     </section>
 
-    <!--- ABOUT SECTION --->
+    <!-- ABOUT SECTION -->
 
     <section class="about" id="about">
 
@@ -58,19 +60,19 @@
 
             If you are looking for a day packed with inspiration, networking and insights - look no further. Check
             this
-            out:
-            <!-- Emoji checklist -->
+            out:</p>
+        <!-- Emoji checklist -->
         <ol>
             <li>Learn from the leading forces</li>
             <li>Interactive and fun</li>
             <li>98% satisfaction rate last year</li>
             <li>Participate digitally from the comfort of your home</li>
         </ol>
-        </p>
+
 
     </section>
 
-    <!---SPEAKER SECTION --->
+    <!-- SPEAKER SECTION -->
 
     <section class="speakers" id="speakers">
 
@@ -79,7 +81,8 @@
         <ul class="speaker speaker-wrapper">
 
             <li class="speaker-item">
-                <img src="images/kristian-kjeldsen.jpg" alt="Speaker Kristian Kjeldsen" class="speaker-img">
+                <img src="images/kristian-kjeldsen-speaker-front-end-conference.jpg"
+                    alt="Profile picture of the keynote speaker Kristian Kjeldsen" class="speaker-img">
                 <h3 class="speaker-header">Kristian Kjeldsen</h3>
                 <p class="speaker-caption">
                     Keynote Speaker
@@ -87,7 +90,8 @@
             </li>
 
             <li class="speaker-item">
-                <img src="images/bill-gates.png" alt="Speaker Bill Gates" class="speaker-img">
+                <img src="images/bill-gates-speaker-front-end-conference.png"
+                    alt="Profile picture of the speaker Bill Gates" class="speaker-img">
                 <h3 class="speaker-header">Bill Gates</h3>
                 <p class="speaker-caption">
                     Co-founder @ Microsoft
@@ -95,7 +99,8 @@
             </li>
 
             <li class="speaker-item">
-                <img src="images/amy-webb.jpg" alt="Speaker Amy Webb" class="speaker-img">
+                <img src="images/amy-webb-speaker-front-end-conference.jpg"
+                    alt="Profile picture of the speaker Amy Webb" class="speaker-img">
                 <h3 class="speaker-header">Amy Webb</h3>
                 <p class="speaker-caption">
                     Founder @ Future Today Institute
@@ -103,7 +108,8 @@
             </li>
 
             <li class="speaker-item">
-                <img src="images/paul-irish.png" alt="Speaker Paul Irish" class="speaker-img">
+                <img src="images/paul-irish-speaker-front-end-conference.png"
+                    alt="Profile picture of the speaker Paul Irish" class="speaker-img">
                 <h3 class="speaker-header">Paul Irish</h3>
                 <p class="speaker-caption">
                     Performance Engineer @ Google Chrome
@@ -111,7 +117,8 @@
             </li>
 
             <li class="speaker-item">
-                <img src="images/emily-plummer.png" alt="Speaker Emily Plummer" class="speaker-img">
+                <img src="images/emily-plummer-speaker-front-end-conference.png"
+                    alt="Profile picture of the speaker Emily Plummer" class="speaker-img">
                 <h3 class="speaker-header">Emily Plummer</h3>
                 <p class="speaker-caption">
                     Design Systems Engineer @ GitHub
@@ -119,7 +126,8 @@
             </li>
 
             <li class="speaker-item">
-                <img src="images/igor-minar.png" alt="Speaker Igor Minar" class="speaker-img">
+                <img src="images/igor-minar-speaker-front-end-conference.png"
+                    alt="Profile picture of the speaker Igor Minar" class="speaker-img">
                 <h3 class="speaker-header">Igor Minar</h3>
                 <p class="speaker-caption">
                     Software Engineer @ Google
@@ -129,7 +137,7 @@
         </ul>
     </section>
 
-    <!--- TICKET SECTION --->
+    <!-- TICKET SECTION -->
 
     <section id="tickets">
 
@@ -143,7 +151,7 @@
 
                     <div class="price">995 SEK</div>
                     <p class="countdown">The price increases in</p>
-                    <!-- Countdown -->
+                    <!-- JS Countdown -->
                     <p id="countdowntimer"></p>
                     <!-- CTA -->
                     <input type="button" value="Get tickets" class="ticket-btn" onclick="window.location.href='/'" />
@@ -174,7 +182,7 @@
     </section>
 
 
-    <!--- CONTACT SECTION --->
+    <!-- CONTACT SECTION -->
 
     <section class="contact" id="contact">
 
@@ -182,14 +190,16 @@
             <h2 class="title">Have a question?</h2>
             <br>
             <label for="firstname">First Name:</label><br>
-            <input class="contact-input" type="text" id="firstname" name="firstname" placeholder="Your first name...">
+            <input class="contact-input" type="text" id="firstname" name="firstname" placeholder="Your first name..."
+                required>
             <br>
             <label for="lastname">Last Name:</label><br>
             <input class="contact-input" type="text" id="lastname" name="lastname" placeholder="Your last name...">
             <br>
-            <label for="email">Email: </label><br>
-            <input class="contact-input" type="email" id="email" name="email" placeholder="Your email address...">
-            <br>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="mail" placeholder="Your email address..." required>
+            <span class="error" aria-live="polite"></span>
+            <br><br>
             <label for="message">Message:</label><br>
             <textarea class="contact-input" name="message" id="message"> </textarea>
             <br>
@@ -199,7 +209,7 @@
 
     </section>
 
-    <!--- SPONSOR SECTION --->
+    <!-- SPONSOR SECTION -->
 
     <section>
 
@@ -207,16 +217,20 @@
 
         <div class="sponsors">
             <div class="container-sponsors">
-                <img src="images/KYH-logo.png" alt="KYH" class="img" />
+                <img src="images/KYH-logo-sponsor-front-end-conference.png" alt="Logo of conference sponsor KYH"
+                    class="img" />
             </div>
             <div class="container-sponsors">
-                <img src="images/google-logo.png" alt="Google" class="img" />
+                <img src="images/google-logo-sponsor-front-end-conference.png" alt="Logo of conference sponsor Google"
+                    class="img" />
             </div>
             <div class="container-sponsors">
-                <img src="images/microsoft-logo.png" alt="Microsoft" class="img" />
+                <img src="images/microsoft-logo-sponsor-front-end-conference.png"
+                    alt="Logo of conference sponsor Microsoft" class="img" />
             </div>
             <div class="container-sponsors">
-                <img src="images/samsung-logo.png" alt="Samsung" class="img" />
+                <img src="images/samsung-logo-sponsor-front-end-conference.png" alt="Logo of conference sponsor Samsung"
+                    class="img" />
             </div>
         </div>
 
