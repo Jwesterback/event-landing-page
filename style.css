@@ -352,14 +352,15 @@ ol li::before{
   background: #e6e6e6;
 }
 
+
 .ticket-active {
-  width: 300px;            
-  display: flex;                
-  margin: 15px;                  
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
   background: #002e52;
   color: #fff;
 }
-
 
 .card-header {
   color: #fff;
